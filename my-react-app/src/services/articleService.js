@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080/api/articles'
+const BASE_URL = '/api/articles'
 
 export const articleService = {
   getAll: () => fetch(BASE_URL).then(r => {
