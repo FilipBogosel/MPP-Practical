@@ -173,3 +173,45 @@
   border-color: var(--color-tag-bg);
   color: var(--color-tag-text);
 }
+
+@media (max-width: 768px) {
+  .article {
+    padding: 24px 16px 60px;
+  }
+  .header {
+    margin-bottom: 24px;
+  }
+  .category {
+    margin-bottom: 12px;
+    padding-top: 10px;
+  }
+  .summary {
+    font-size: 1.02rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    padding-left: 12px;
+  }
+  .meta {
+    font-size: 0.7rem;
+    padding-top: 12px;
+  }
+  .image {
+    margin: 20px 0;
+  }
+  .body {
+    font-size: 1.02rem;
+    line-height: 1.7;
+  }
+  .body p {
+    margin-bottom: 1.25em;
+  }
+  .body p:first-child::first-letter {
+    font-size: 3.2rem;
+    margin: 0.05em 0.08em 0 0;
+  }
+  .footer {
+    margin-top: 40px;
+    padding-top: 16px;
+  }
+}
+

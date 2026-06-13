@@ -38,3 +38,33 @@
 .list li + li {
   border-top: 1px solid var(--color-sidebar-border);
 }
+
+@media (max-width: 768px) {
+  .nav {
+    padding-bottom: 0;
+  }
+  .label {
+    display: none;
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  .list::-webkit-scrollbar {
+    height: 3px;
+    background: transparent;
+  }
+  .list::-webkit-scrollbar-thumb {
+    background: var(--color-sidebar-border);
+    border-radius: 1px;
+  }
+  .list li + li {
+    border-top: none;
+    border-left: 1px solid var(--color-sidebar-border);
+  }
+}
+
