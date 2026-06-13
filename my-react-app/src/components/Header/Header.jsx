@@ -1,4 +1,5 @@
 import { useAuth } from '../../context/AuthContext.jsx'
+import { useLanguage } from '../../context/LanguageContext.jsx'
 import logo from '../../assets/UBB.png'
 import styles from './Header.module.css'
 
@@ -11,12 +12,13 @@ const ROLE_COLORS = {
 
 export function Header() {
   const { user, logout } = useAuth()
+  const { t } = useLanguage()
   const roleColor = user ? (ROLE_COLORS[user.role] ?? '#888') : null
 
   return (
     <div className={styles.header}>
       <img src={logo} alt="" className={styles.logo} />
-      <span className={styles.title}>Teoria Transpirației</span>
+      <span className={styles.title}>{t('publication.title')}</span>
 
       {user && (
         <div className={styles.userArea}>

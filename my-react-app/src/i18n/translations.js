@@ -8,6 +8,9 @@ export const LANGUAGES = [
 
 export const translations = {
   ro: {
+    publication: {
+      title: 'Teoria Transpirației',
+    },
     nav: {
       articles:     'Articole',
       loading:      'Se încarcă…',
@@ -28,6 +31,9 @@ export const translations = {
     },
   },
   en: {
+    publication: {
+      title: 'The Perspiration Theory',
+    },
     nav: {
       articles:     'Articles',
       loading:      'Loading…',
@@ -48,6 +54,9 @@ export const translations = {
     },
   },
   hu: {
+    publication: {
+      title: 'Az Izzadság Elmélete',
+    },
     nav: {
       articles:     'Cikkek',
       loading:      'Betöltés…',
@@ -68,6 +77,9 @@ export const translations = {
     },
   },
   de: {
+    publication: {
+      title: 'Die Schweißtheorie',
+    },
     nav: {
       articles:     'Artikel',
       loading:      'Wird geladen…',
@@ -88,6 +100,9 @@ export const translations = {
     },
   },
   fr: {
+    publication: {
+      title: 'La Théorie de la Transpiration',
+    },
     nav: {
       articles:     'Articles',
       loading:      'Chargement…',
