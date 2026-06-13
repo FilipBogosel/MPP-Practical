@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ── Design tokens ─────────────────────────────────────────── */
+:root {
+  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: Georgia, 'Times New Roman', Times, serif;
+
+  --sidebar-width: 320px;
+
+  /* Sidebar */
+  --color-sidebar:        #0f0f14;
+  --color-sidebar-hover:  #17171e;
+  --color-sidebar-active: #1e1e28;
+  --color-sidebar-border: #202028;
+  --color-sidebar-text:   #c8c5bc;
+  --color-sidebar-muted:  #5e5b65;
+
+  /* Main area */
+  --color-bg:         #efede8;
+  --color-surface:    #faf8f4;
+  --color-text:       #1a1917;
+  --color-text-muted: #726c65;
+  --color-border:     #d8d4c8;
+
+  /* Accent */
+  --color-accent:      #bf3030;
+  --color-accent-soft: rgba(191, 48, 48, 0.07);
+
+  /* Tags */
+  --color-tag-bg:   #e8e4dc;
+  --color-tag-text: #4c4840;
+
+  /* Radii */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
